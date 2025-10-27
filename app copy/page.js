@@ -1,4 +1,4 @@
-// import { use, useEffect } from 'react';
+import { use, useEffect } from 'react';
 import CategoryTiles from '../components/CategoryTiles'
 import ProfileCard from '../components/ProfileCard'
 import Image from 'next/image';
@@ -18,24 +18,24 @@ const categories = [
 
 export default async function Home() {
   // i want to fetch featured profiles from api endpoint /api/featured-profiles with proper loading feature as well try catch block
-  // const [profiles, setProfiles] = [];
-  // const [isLoading, setIsLoading] = false;
+  const [profiles, setProfiles] = [];
+  const [isLoading, setIsLoading] = false;
 
-  // useEffect(() => {
-  //   setIsLoading(true);
-  //   fetchProfiles();
-  // }, []);
+  useEffect(() => {
+    setIsLoading(true);
+    fetchProfiles();
+  }, []);
 
-  // const fetchProfiles = async () => {
-  //   try {
-  //     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/home`, { cache: 'no-store' });
-  //     const data = await res.json();
-  //     setProfiles(data);
-  //     setIsLoading(false);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
+  const fetchProfiles = async () => {
+    try {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/home`, { cache: 'no-store' });
+      const data = await res.json();
+      setProfiles(data);
+      setIsLoading(false);
+    } catch (error) {
+      console.log(error);
+    }
+  }; 
 
   return (
     // <>
@@ -111,45 +111,162 @@ export default async function Home() {
               </div>
             </div>
 
-            {/* <div className="row category-row gy-4">
-              {isLoading ? (
-                // 🔸 Show 5 skeletons per row
-                Array.from({ length: 5 }).map((_, index) => (
-                  <div className="col-6 col-md-4 col-lg-2-4 category-col" key={index}>
-                    <div className="animate-pulse rounded-xl border border-gray-200 p-3 h-100 bg-white shadow-sm">
-                      <div className="w-full h-40 bg-gray-200 rounded-lg mb-3"></div>
-                      <div className="flex justify-center items-center gap-2 mb-2">
-                        <div className="w-6 h-6 bg-gray-200 rounded-full"></div>
-                        <div className="h-4 w-32 bg-gray-200 rounded"></div>
-                      </div>
-                      <div className="h-3 w-24 bg-gray-200 rounded mx-auto"></div>
-                    </div>
-                  </div>
-                ))
-              ) : (
-                categories.map((category, index) => (
+            <div className="row category-row gy-4">
+              {/* Example Category Item */}
+              <div className="row category-row gy-4">
+                {categories.map((category, index) => (
                   <div className="col-sm-6 col-md-4 col-lg-3 category-col" key={index}>
-                    <div className="category-items h-100 slow-effect rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+                    <div className="category-items h-100 slow-effect">
                       <div className="category-image position-relative overflow-hidden">
-                        <a href="#">
-                          <img className="slow-effect w-full object-cover" src={category.image} alt={category.name} />
-                        </a>
+                        <a href="#"> <img className="slow-effect" src={category.image} alt="" /></a>
                       </div>
-                      <div className="category-content text-center p-3">
-                        <div className="items-heading d-flex flex-wrap align-items-center justify-content-center gap-2">
-                          <img className="me-2 w-6 h-6" src={category.image} alt={category.name} />
-                          <a href="#" className="category-links fw-600 position-relative text-lg font-semibold hover:text-rose-600">
-                            {category.name}
-                          </a>
+                      <div className="category-content text-center">
+                        <div className="items-heading d-flex flex-wrap align-items-center slow-effect justify-content-center">
+                          <img className="me-2" src={category.icon} alt="" />
+                          <a href="#" className="category-links fw-600 position-relative">{category.label} </a>
                         </div>
-                        <p className="m-0 slow-effect text-gray-500">{category.tagline}</p>
+                        <p className="m-0 slow-effect">{category.tagline}</p> 
+                      </div>          
+                    </div>
+                    <div className="category-content text-center">
+                      <div className="items-heading d-flex flex-wrap align-items-center slow-effect justify-content-center">
+                        <img className="me-2" src="img/category/Independen_icon.svg" alt="" />
+                        <a href="#" className="category-links fw-600 position-relative">Independent Escorts </a>
                       </div>
+                      <p className="m-0 slow-effect">Verified Indian Escorts</p>
                     </div>
                   </div>
-                ))
-              )}
-            </div> */}
+                ))}
+                <div className="col-sm-6 col-md-4 col-lg-3 category-col">
+                  <div className="category-items h-100 slow-effect">
+                    <div className="category-image position-relative overflow-hidden">
+                      <a href="#"><img className="slow-effect" src="img/category/russian_escorts.png" alt="" /></a>
+                    </div>
+                    <div className="category-content text-center">
+                      <div className="items-heading d-flex flex-wrap align-items-center slow-effect justify-content-center">
+                        <img className="me-2" src="img/category/Independen_icon.svg" alt="" />
+                        <a href="#" className="category-links fw-600 position-relative">Russian Escorts </a>
+                      </div>
+                      <p className="m-0 slow-effect">Luxury Foreign Companions</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3 category-col">
+                  <div className="category-items h-100 slow-effect">
+                    <div className="category-image position-relative overflow-hidden">
+                      <a href="#"> <img className="slow-effect" src="img/category/vip_escort.png" alt="" /></a>
+                    </div>
+                    <div className="category-content text-center">
+                      <div className="items-heading d-flex flex-wrap align-items-center slow-effect justify-content-center">
+                        <img className="me-2" src="img/category/Independen_icon.svg" alt="" />
+                        <a href="#" className="category-links fw-600 position-relative">VIP Escorts </a>
+                      </div>
+                      <p className="m-0 slow-effect">Elite High-Class Models</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3 category-col">
+                  <div className="category-items h-100 slow-effect">
+                    <div className="category-image position-relative overflow-hidden">
+                      <a href="#"><img className="slow-effect" src="img/category/college_girl_escort.png" alt="" /></a>
+                    </div>
+                    <div className="category-content text-center">
+                      <div className="items-heading d-flex flex-wrap align-items-center slow-effect justify-content-center">
+                        <img className="me-2" src="img/category/Independen_icon.svg" alt="" />
+                        <a href="#" className="category-links fw-600 position-relative">College Girls Escorts </a>
+                      </div>
+                      <p className="m-0 slow-effect">Young, Fresh & Fun</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3 category-col">
+                  <div className="category-items h-100 slow-effect">
+                    <div className="category-image position-relative overflow-hidden">
+                      <a href="#"> <img className="slow-effect" src="img/category/housewife_escort.png" alt="" /></a>
+                    </div>
+                    <div className="category-content text-center">
+                      <div className="items-heading d-flex flex-wrap align-items-center slow-effect justify-content-center">
+                        <img className="me-2" src="img/category/Independen_icon.svg" alt="" />
+                        <a href="#" className="category-links fw-600 position-relative">Housewife Escorts </a>
+                      </div>
+                      <p className="m-0 slow-effect">Mature & Discreet Partners</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3 category-col">
+                  <div className="category-items h-100 slow-effect">
+                    <div className="category-image position-relative overflow-hidden">
+                      <a href="#"><img className="slow-effect" src="img/category/modal_escort.png" alt="" /></a>
+                    </div>
+                    <div className="category-content text-center">
+                      <div className="items-heading d-flex flex-wrap align-items-center slow-effect justify-content-center">
+                        <img className="me-2" src="img/category/Independen_icon.svg" alt="" />
+                        <a href="#" className="category-links fw-600 position-relative">Model Escorts </a>
+                      </div>
+                      <p className="m-0 slow-effect">Fashion Diva Companions</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3 category-col">
+                  <div className="category-items h-100 slow-effect">
+                    <div className="category-image position-relative overflow-hidden">
+                      <a href="#"><img className="slow-effect" src="img/category/call_girl_escort.png" alt="" /></a>
+                    </div>
+                    <div className="category-content text-center">
+                      <div className="items-heading d-flex flex-wrap align-items-center slow-effect justify-content-center">
+                        <img className="me-2" src="img/category/Independen_icon.svg" alt="" />
+                        <a href="#" className="category-links fw-600 position-relative">Call Girls in Jaipur </a>
+                      </div>
+                      <p className="m-0 slow-effect">24×7 Available Companions</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3 category-col">
+                  <div className="category-items h-100 slow-effect">
+                    <div className="category-image position-relative overflow-hidden">
+                      <a href="#"><img className="slow-effect" src="img/category/luxury_Escort.png" alt="" /></a>
+                    </div>
+                    <div className="category-content text-center">
+                      <div className="items-heading d-flex flex-wrap align-items-center slow-effect justify-content-center">
+                        <img className="me-2" src="img/category/Independen_icon.svg" alt="" />
+                        <a href="#" className="category-links fw-600 position-relative">Luxury Escorts </a>
+                      </div>
+                      <p className="m-0 slow-effect">Premium & Private Experience</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3 category-col">
+                  <div className="category-items h-100 slow-effect">
+                    <div className="category-image position-relative overflow-hidden">
+                      <a href="#"><img className="slow-effect" src="img/category/erotic_massages_escort.png" alt="" /></a>
+                    </div>
+                    <div className="category-content text-center">
+                      <div className="items-heading d-flex flex-wrap align-items-center slow-effect justify-content-center">
+                        <img className="me-2" src="img/category/Independen_icon.svg" alt="" />
+                        <a href="#" className="category-links fw-600 position-relative">Erotic Massages </a>
+                      </div>
+                      <p className="m-0 slow-effect">Sensual Relaxation</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3 category-col">
+                  <div className="category-items h-100 slow-effect">
+                    <div className="category-image position-relative overflow-hidden">
+                      <a href="#"><img className="slow-effect" src="img/category/adult_escort.png" alt="" /></a>
+                    </div>
+                    <div className="category-content text-center">
+                      <div className="items-heading d-flex flex-wrap align-items-center slow-effect justify-content-center">
+                        <img className="me-2" src="img/category/Independen_icon.svg" alt="" />
+                        <a href="#" className="category-links fw-600 position-relative"> Adult Meetings</a>
+                      </div>
+                      <p className="m-0 slow-effect">Private Encounters</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              {/* Repeat other category items similarly... */}
+            </div>
           </div>
         </section>
 
