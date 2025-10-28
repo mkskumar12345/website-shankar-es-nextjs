@@ -222,195 +222,199 @@ export default function TermsAndConditionsPage() {
                       provisions of law, regulations, rules, notifications, directions, orders, circulars, guidelines rules
                       of ethics and good conduct of the network services (<em>netiquette). Users, in particular, undertake
                         not to transmit through the Site material of offensive and libellous nature, discriminatory,
-                        harassing, defamatory, obscene, invasive of another</em>’</em>s privacy including bodily privacy,
-                    insulting or harassing on the basis of gender, racially or ethnically objectionable, relating or
-                    encouraging money laundering or gambling, promoting enmity on grounds of religion or caste,
-                    pornographic, paedophile, vulgar, blasphemous or which is some way contrary to the applicable laws and
-                    regulations and/or the principles of public order and good morals.</em></p>
+                        harassing, defamatory, obscene, invasive of another's privacy including bodily privacy,
+                        insulting or harassing on the basis of gender, racially or ethnically objectionable, relating or
+                        encouraging money laundering or gambling, promoting enmity on grounds of religion or caste,
+                        pornographic, paedophile, vulgar, blasphemous or which is some way contrary to the applicable laws and
+                        regulations and/or the principles of public order and good morals.</em></p>
 
-                <p>Offeror Users are responsible for complying with all applicable laws with respect to the content of
-                  their advertisement. In particular, Users must not advertise any services which it would be unlawful
-                  to perform within their jurisdiction and they must not include any material which infringes applicable
-                  criminal law.</p>
+                    <p>Offeror Users are responsible for complying with all applicable laws with respect to the content of
+                      their advertisement. In particular, Users must not advertise any services which it would be unlawful
+                      to perform within their jurisdiction and they must not include any material which infringes applicable
+                      criminal law.</p>
 
-                <p>Offeror Users warrant that they are the data subjects of or that they have the explicit and informed
-                  consent of all persons whose personal data is included in any advertisement placed by them and that
-                  they will not use any material in their advertisements which contravenes the copyright or other
-                  intellectual property rights of any third person without having the permission of that third person.
-                </p>
+                    <p>Offeror Users warrant that they are the data subjects of or that they have the explicit and informed
+                      consent of all persons whose personal data is included in any advertisement placed by them and that
+                      they will not use any material in their advertisements which contravenes the copyright or other
+                      intellectual property rights of any third person without having the permission of that third person.
+                    </p>
 
-                <p>Placing advertisements purporting to be from someone or including the data of someone who has not
-                  consented to those advertisements being placed is a serious breach of these Terms of Use and may lead
-                  to accounts being closed and Offeror Users responsible banned from the Site.</p>
+                    <p>Placing advertisements purporting to be from someone or including the data of someone who has not
+                      consented to those advertisements being placed is a serious breach of these Terms of Use and may lead
+                      to accounts being closed and Offeror Users responsible banned from the Site.</p>
 
-                <p>Offeror Users are aware that by including an email address in advertisements hosted by the Site, we
-                  have no control over any materials which may be sent directly to that email address, whether by other
-                  Users or otherwise, and whether in answer to that advertisement.</p>
+                    <p>Offeror Users are aware that by including an email address in advertisements hosted by the Site, we
+                      have no control over any materials which may be sent directly to that email address, whether by other
+                      Users or otherwise, and whether in answer to that advertisement.</p>
 
-                <h6 className="tnc-heading fw-600 fs-22">Guidelines</h6>
+                    <h6 className="tnc-heading fw-600 fs-22">Guidelines</h6>
 
-                <p>Offeror Users have their specific attention drawn to the following Guidelines. For the avoidance of
-                  doubt, we offer this summary as a convenience and should not be taken to constitute legal advice as to
-                  when material is lawful to include in advertisements and profiles.</p>
+                    <p>Offeror Users have their specific attention drawn to the following Guidelines. For the avoidance of
+                      doubt, we offer this summary as a convenience and should not be taken to constitute legal advice as to
+                      when material is lawful to include in advertisements and profiles.</p>
 
-                <ol className="order-number-list">
+                    <ol className="order-number-list">
 
-                  <li className="number-listing">Prohibited material includes:</li>
+                      <li className="number-listing">Prohibited material includes:</li>
 
-                  <ul className="un-order-list">
-                    <li>images of actual rather than simulated sexual intercourse;</li>
+                      <ul className="un-order-list">
+                        <li>images of actual rather than simulated sexual intercourse;</li>
 
-                    <li>nude images including images containing genitalia;</li>
+                        <li>nude images including images containing genitalia;</li>
 
-                    <li>other sexually explicit and very strong sexual images;</li>
-                  </ul>
+                        <li>other sexually explicit and very strong sexual images;</li>
+                      </ul>
 
-                  <li className="number-listing">Only 3 free advertisements may be published per week (Monday to Sunday),
-                    from a single account,
-                    unless the ads are promoted with a paid product, in which case this limit does not apply.</li>
+                      <li className="number-listing">Only 3 free advertisements may be published per week (Monday to Sunday),
+                        from a single account,
+                        unless the ads are promoted with a paid product, in which case this limit does not apply.</li>
 
-                  <li className="number-listing">It is not permitted to include hypertext links in any advertisement or
-                    profile.</li>
+                      <li className="number-listing">It is not permitted to include hypertext links in any advertisement or
+                        profile.</li>
 
-                  <li className="number-listing">It is not permitted to publish advertisements offering money or services in
-                    exchange for sexual
-                    performance.</li>
+                      <li className="number-listing">It is not permitted to publish advertisements offering money or services in
+                        exchange for sexual
+                        performance.</li>
 
-                  <li className="number-listing">It is not permitted to post content and/or Advertisements relating to the
-                    sale of medications,
-                    drugs, weapons and/or offensive instruments.</li>
+                      <li className="number-listing">It is not permitted to post content and/or Advertisements relating to the
+                        sale of medications,
+                        drugs, weapons and/or offensive instruments.</li>
 
-                  <li className="number-listing">It is not permitted to publish advertisements that are not relevant to the
-                    subject matter of the
-                    site.</li>
+                      <li className="number-listing">It is not permitted to publish advertisements that are not relevant to the
+                        subject matter of the
+                        site.</li>
 
-                  <li className="number-listing">It is not permitted to publish advertisements in a foreign language or in
-                    any case in a language
-                    other than official English.</li>
+                      <li className="number-listing">It is not permitted to publish advertisements in a foreign language or in
+                        any case in a language
+                        other than official English.</li>
 
-                  <li className="number-listing">Any material which includes or promotes suicide or self-harm is not
-                    permitted.</li>
+                      <li className="number-listing">Any material which includes or promotes suicide or self-harm is not
+                        permitted.</li>
 
-                  <li className="number-listing">Any material which contravenes the rules on “extreme pornography” including
-                    erotic material which
-                    depicts acts which appear to be non-consensual, which appears to involve animals, which appears to
-                    involve sexual acts with dead bodies, or which depicts acts which appear to threaten a person's life
-                    or acts which result, or are likely to result, in serious injury to a person's anus, breasts or
-                    genitals are not allowed;</li>
+                      <li className="number-listing">Any material which contravenes the rules on “extreme pornography” including
+                        erotic material which
+                        depicts acts which appear to be non-consensual, which appears to involve animals, which appears to
+                        involve sexual acts with dead bodies, or which depicts acts which appear to threaten a person's life
+                        or acts which result, or are likely to result, in serious injury to a person's anus, breasts or
+                        genitals are not allowed;</li>
 
-                  <li className="number-listing">Any material which makes use without each participant's consent of erotic
-                    material provided on
-                    private occasions (“revenge porn”) is not allowed;</li>
+                      <li className="number-listing">Any material which makes use without each participant's consent of erotic
+                        material provided on
+                        private occasions (“revenge porn”) is not allowed;</li>
 
-                  <li className="number-listing">Any material which depicts, promotes, induces or offers sexual activity
-                    with minors or which
-                    otherwise promotes or encourages paedophilia (“paedopornographic material”) is not allowed;</li>
+                      <li className="number-listing">Any material which depicts, promotes, induces or offers sexual activity
+                        with minors or which
+                        otherwise promotes or encourages paedophilia (“paedopornographic material”) is not allowed;</li>
 
-                  <li className="number-listing">Any material portraying or purporting to portray third parties or
-                    artificially morphed images of
-                    third parties who have not consented to that use or publication is not allowed;</li>
+                      <li className="number-listing">Any material portraying or purporting to portray third parties or
+                        artificially morphed images of
+                        third parties who have not consented to that use or publication is not allowed;</li>
 
-                  <li className="number-listing">By placing advertisements or creating profiles, Users certify that they
-                    have full legal rights to
-                    do so, and also declare and warrant that the material uploaded belongs to persons of legal age (over
-                    18) which have given their free and informed consent to publish them on the Site for adult dating
-                    purposes and who are not being coerced or pressured in any way to participate;</li>
+                      <li className="number-listing">By placing advertisements or creating profiles, Users certify that they
+                        have full legal rights to
+                        do so, and also declare and warrant that the material uploaded belongs to persons of legal age (over
+                        18) which have given their free and informed consent to publish them on the Site for adult dating
+                        purposes and who are not being coerced or pressured in any way to participate;</li>
 
-                  <li className="number-listing">It is not permitted to publish libellous and/or defamatory content;</li>
+                      <li className="number-listing">It is not permitted to publish libellous and/or defamatory content;</li>
 
-                  <li className="number-listing">Offeror Users may not upload, post, display, or publish material that
-                    constitutes hate speech, is
-                    discriminatory, threatening or harassing, or which encourages or promotes violence, or which would
-                    constitute criminal offences under legislation relating to child sexual exploitation, terrorism or
-                    racism or xenophobia. For these purposes “hate speech” includes material directed to a group or
-                    individual based on race, ethnicity, national origin, immigration status, caste, religion, sex,
-                    gender identity or expression, sexual orientation, age, disability, or any other protected
-                    characteristic and which is intended or has the effect of or is likely to have the effect of
-                    inciting discrimination, hatred, fear of, or violence against such group or individual.
+                      <li className="number-listing">Offeror Users may not upload, post, display, or publish material that
+                        constitutes hate speech, is
+                        discriminatory, threatening or harassing, or which encourages or promotes violence, or which would
+                        constitute criminal offences under legislation relating to child sexual exploitation, terrorism or
+                        racism or xenophobia. For these purposes “hate speech” includes material directed to a group or
+                        individual based on race, ethnicity, national origin, immigration status, caste, religion, sex,
+                        gender identity or expression, sexual orientation, age, disability, or any other protected
+                        characteristic and which is intended or has the effect of or is likely to have the effect of
+                        inciting discrimination, hatred, fear of, or violence against such group or individual.
 
-                    <p>The following are non-exhaustive examples of behaviour or material which is considered to be
-                      threatening or harassing:</p>
+                        <p>The following are non-exhaustive examples of behaviour or material which is considered to be
+                          threatening or harassing:</p>
 
-                    <ul className="un-order-list">
-                      <li>is or appears to be targeted at a specific individual or group of individuals and is
-                        offensive, derogatory, or harassing;</li>
+                        <ul className="un-order-list">
+                          <li>is or appears to be targeted at a specific individual or group of individuals and is
+                            offensive, derogatory, or harassing;</li>
 
-                      <li>is used or appears to be intended to be used to extract money or another benefit from anyone
-                        else in exchange for removal of the Content;</li>
+                          <li>is used or appears to be intended to be used to extract money or another benefit from anyone
+                            else in exchange for removal of the Content;</li>
 
-                      <li>contains unsolicited sexual content or unsolicited language that sexually objectifies another
-                        User or anyone else in a non-consensual way;</li>
+                          <li>contains unsolicited sexual content or unsolicited language that sexually objectifies another
+                            User or anyone else in a non-consensual way;</li>
 
-                      <li>disseminate or are intended to disseminate online personal and private information (such as
-                        full name, address, telephone number, etc.) or other data concerning a person (doxing) or
-                        otherwise identifies a User or other third party or includes material which could be used for
-                        such purposes such as employer details, telephone numbers, financial details, location
-                        information, names, identity documents, email addresses, log-in credentials or any other
-                        personally identifiable information without that person's express written consent.</li>
-                    </ul>
+                          <li>disseminate or are intended to disseminate online personal and private information (such as
+                            full name, address, telephone number, etc.) or other data concerning a person (doxing) or
+                            otherwise identifies a User or other third party or includes material which could be used for
+                            such purposes such as employer details, telephone numbers, financial details, location
+                            information, names, identity documents, email addresses, log-in credentials or any other
+                            personally identifiable information without that person's express written consent.</li>
+                        </ul>
+                        <ul>
+                          <li className="number-listing">Users may not use the Site to promote illegal trading, Ponzi or pyramid
+                            schemes to engage in
+                            misleading or deceptive conduct, or conduct that is likely to mislead or deceive any other User or
+                            which implies, contrary to the fact, that any person or organisation endorses that User or their
+                            Content or that they are acting as a brand ambassador or representative of any person or
+                            organisation. </li>
 
-                    <li className="number-listing">Users may not use the Site to promote illegal trading, Ponzi or pyramid
-                      schemes to engage in
-                      misleading or deceptive conduct, or conduct that is likely to mislead or deceive any other User or
-                      which implies, contrary to the fact, that any person or organisation endorses that User or their
-                      Content or that they are acting as a brand ambassador or representative of any person or
-                      organisation. </li>
+                        </ul>
 
-                  </ul>
-
-                  <p>The insertion into any advertisement or profile of paedopornographic material will be immediately
-                    reported to the competent Authorities. We also reserve the right to report material which
-                    contravenes our rules on extreme pornography or revenge pornography. </p>
-
-
-
-                  <p>Reports of infringement of intellectual property rights or misuse of images or data (e.g.
-                    telephone, e-mail, names and addresses) may be notified to <a href="#"
-                      rel="nofollow">privacy@sesj.in</a></p>
+                        <p>The insertion into any advertisement or profile of paedopornographic material will be immediately
+                          reported to the competent Authorities. We also reserve the right to report material which
+                          contravenes our rules on extreme pornography or revenge pornography. </p>
 
 
 
-                  <p>To report cases of content deemed to be unlawful or abusive, please send an email to <a href="#"
-                    rel="nofollow">abuse@sesj.in</a></p>
-
-                  <p>On uploaded images, our logo will be added as a watermark with the phrase “posted on”.</p>
-
-
-                  <p className="mt-5">
-                    SOFYAN LIMITED<br />Amathus Avenue<br />4532 Agios Tychonas<br />Limassol, Cyprus<br />Registration
-                    Number: HE 445193
-                  </p>
-
-
-                  <h6 className="tnc-heading fw-600 fs-22">Changes to the Site</h6>
-
-                  <p>We reserve the right to intervene via the Site or to make any modifications or changes (e.g.
-                    design, focus and/or functional content) therein without prior notification, or to limit the Offeror
-                    User’s access to the website due to maintenance or technical or other reasons for a necessary period
-                    of time without prior notification. In such cases, no Offeror User is entitled to claim any
-                    compensation or refund pursuant to this policy based on such modification, changes or
-                    non-availability.</p>
-
-                  <h6 className="tnc-heading fw-600 fs-22">Refunds Policy</h6>
-
-                  <p>Except where refund is expressly provided for by law, we do not refund Offeror Users the sums paid
-                    for the Paid Services, but we may exceptionally and at our sole discretion offer credits (usable
-                    exclusively on the Site) in an amount equal to the sums paid and not used, to be used for future
-                    Paid Services. The Offeror User will not be entitled to any refund or credit in case of breach of
-                    the obligations of these Terms and Conditions</p>
+                        <p>Reports of infringement of intellectual property rights or misuse of images or data (e.g.
+                          telephone, e-mail, names and addresses) may be notified to <a href="#"
+                            rel="nofollow">privacy@sesj.in</a></p>
 
 
 
-                  <h6 className="tnc-heading fw-600 fs-22">Governing Law and Jurisdiction</h6>
+                        <p>To report cases of content deemed to be unlawful or abusive, please send an email to <a href="#"
+                          rel="nofollow">abuse@sesj.in</a></p>
 
-                  <p>These Terms of Use are governed by and interpreted in accordance with the laws of India and are
-                    subject to the exclusive jurisdiction of the Indian courts.</p>
+                        <p>On uploaded images, our logo will be added as a watermark with the phrase “posted on”.</p>
 
-              </div>
-            </div>
-          </div>
-        </section >
-      </div >
+
+                        <p className="mt-5">
+                          SOFYAN LIMITED<br />Amathus Avenue<br />4532 Agios Tychonas<br />Limassol, Cyprus<br />Registration
+                          Number: HE 445193
+                        </p>
+
+
+                        <h6 className="tnc-heading fw-600 fs-22">Changes to the Site</h6>
+
+                        <p>We reserve the right to intervene via the Site or to make any modifications or changes (e.g.
+                          design, focus and/or functional content) therein without prior notification, or to limit the Offeror
+                          User’s access to the website due to maintenance or technical or other reasons for a necessary period
+                          of time without prior notification. In such cases, no Offeror User is entitled to claim any
+                          compensation or refund pursuant to this policy based on such modification, changes or
+                          non-availability.</p>
+
+                        <h6 className="tnc-heading fw-600 fs-22">Refunds Policy</h6>
+
+                        <p>Except where refund is expressly provided for by law, we do not refund Offeror Users the sums paid
+                          for the Paid Services, but we may exceptionally and at our sole discretion offer credits (usable
+                          exclusively on the Site) in an amount equal to the sums paid and not used, to be used for future
+                          Paid Services. The Offeror User will not be entitled to any refund or credit in case of breach of
+                          the obligations of these Terms and Conditions</p>
+
+
+
+                        <h6 className="tnc-heading fw-600 fs-22">Governing Law and Jurisdiction</h6>
+
+                        <p>These Terms of Use are governed by and interpreted in accordance with the laws of India and are
+                          subject to the exclusive jurisdiction of the Indian courts.</p>
+
+                      </li>
+                    </ol>
+                  </div>
+                </div >
+              </div >
+            </div >
+          </div >
+        </section>
+      </div>
     </>
   );
 }

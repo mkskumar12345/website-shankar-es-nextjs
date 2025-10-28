@@ -37,18 +37,18 @@ export default function Footer() {
                 <li>
                   <a href="#">Home</a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#">Area</a>
-                </li>
+                </li> */}
                 <li>
                   <a href="#">Blog</a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="contact-us">Contact</a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#">Categories</a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -58,14 +58,14 @@ export default function Footer() {
               <h6 className="footer-widget fw-600">Legal</h6>
               <ul className="p-0 m-0 d-flex flex-column">
                 <li>
-                  <a href="#">Privacy Policy</a>
+                  <a href="privacy-policy">Privacy Policy</a>
                 </li>
                 <li>
                   <a href="terms-and-conditions">Terms of Use</a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="cookie-policy">Cookie Policy</a>
-                </li>
+                </li> */}
                 <li>
                   <a href="#">Disclaimer</a>
                 </li>
