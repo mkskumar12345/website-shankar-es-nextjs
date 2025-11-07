@@ -1,20 +1,25 @@
 // import { use, useEffect } from 'react';
-import CategoryTiles from '../components/CategoryTiles'
-import ProfileCard from '../components/ProfileCard'
-import Image from 'next/image';
+import CategoryTiles from "../components/CategoryTiles";
+import ProfileCard from "../components/ProfileCard";
+import Image from "next/image";
+import SearchInput from "../components/SearchInput";
 
 const categories = [
-  { slug: 'independent-escorts', label: 'Independent', tagline: 'Verified Indian Escorts' },
-  { slug: 'vip', label: 'VIP', tagline: 'Luxury Companions' },
-  { slug: 'russian', label: 'Russian', tagline: 'International' },
-  { slug: 'agency', label: 'Agency', tagline: 'Agency Verified' },
-  { slug: 'college', label: 'College', tagline: 'Friendly Companions' },
-  { slug: 'blonde', label: 'Blonde', tagline: 'International Look' },
-  { slug: 'student', label: 'Student', tagline: 'Young & Fresh' },
-  { slug: 'part-time', label: 'Part-time', tagline: 'Flexible Timings' },
-  { slug: 'massage', label: 'Massage', tagline: 'Professional Massage' },
-  { slug: 'vip-elite', label: 'VIP Elite', tagline: 'Premium & Luxury' }
-]
+  {
+    slug: "independent-escorts",
+    label: "Independent",
+    tagline: "Verified Indian Escorts",
+  },
+  { slug: "vip", label: "VIP", tagline: "Luxury Companions" },
+  { slug: "russian", label: "Russian", tagline: "International" },
+  { slug: "agency", label: "Agency", tagline: "Agency Verified" },
+  { slug: "college", label: "College", tagline: "Friendly Companions" },
+  { slug: "blonde", label: "Blonde", tagline: "International Look" },
+  { slug: "student", label: "Student", tagline: "Young & Fresh" },
+  { slug: "part-time", label: "Part-time", tagline: "Flexible Timings" },
+  { slug: "massage", label: "Massage", tagline: "Professional Massage" },
+  { slug: "vip-elite", label: "VIP Elite", tagline: "Premium & Luxury" },
+];
 
 export default async function Home() {
   // i want to fetch featured profiles from api endpoint /api/featured-profiles with proper loading feature as well try catch block
@@ -73,7 +78,6 @@ export default async function Home() {
     // </>
     <>
       <div className="main overflow-hidden">
-
         {/* Banner Section */}
         <section className="banner-section position-relative">
           <div className="container">
@@ -81,20 +85,19 @@ export default async function Home() {
               <div className="col-md-8 mx-auto">
                 <div className="main-banner-content text-center">
                   <h1 className="banner-heading fw-600 fs-40">
-                    <span className="primary-color">Jaipur Escorts –</span> Verified & Professional Companions
+                    <span className="primary-color">Jaipur Escorts –</span>{" "}
+                    Verified & Professional Companions
                   </h1>
                   <p className="banner-text fs-20">
-                    Seek whatever your heart desires, experience the passionate side of Celebrity Escorts in Jaipur, and let us take care of your stresses.
+                    Seek whatever your heart desires, experience the passionate
+                    side of Celebrity Escorts in Jaipur, and let us take care of
+                    your stresses.
                   </p>
                   <a href="#" className="banner-btn btn common-btn">
                     Explore Escorts in Jaipur
                   </a>
                 </div>
-
-                <div className="banner-input-form">
-                  <input type="text" id="bannerInput" placeholder="Looking for?" />
-                  <button className="banner-search-btn btn">Search</button>
-                </div>
+                <SearchInput />
               </div>
             </div>
           </div>
@@ -106,7 +109,9 @@ export default async function Home() {
             <div className="row">
               <div className="col-md-12">
                 <div className="section-heading">
-                  <h2 className="section-title fs-30 fw-600">Explore by Category</h2>
+                  <h2 className="section-title fs-30 fw-600">
+                    Explore by Category
+                  </h2>
                 </div>
               </div>
             </div>
@@ -149,7 +154,6 @@ export default async function Home() {
                 ))
               )}
             </div> */}
-
           </div>
         </section>
 
@@ -165,10 +169,16 @@ export default async function Home() {
               <div className="col-md-8 offset-md-1">
                 <div className="about-home-content">
                   <div className="section-heading">
-                    <h3 className="section-title fs-30 fw-600 primary-color">About Our Agency</h3>
+                    <h3 className="section-title fs-30 fw-600 primary-color">
+                      About Our Agency
+                    </h3>
                   </div>
                   <p className="m-0">
-                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet. Stet no et lorem dolor et diam, amet duo ut dolore vero eos.
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                    Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
+                    sit, sed stet lorem sit clita duo justo magna dolore erat
+                    amet. Stet no et lorem dolor et diam, amet duo ut dolore
+                    vero eos.
                   </p>
                 </div>
               </div>
@@ -178,12 +188,18 @@ export default async function Home() {
 
         {/* Featured Profiles Section */}
         <section className="feature-section position-relative section-padding overflow-hidden">
-          <img className="feature-bg-shape updown-anim position-absolute" src="/img/shapes/round_bg_shape.webp" alt="" />
+          <img
+            className="feature-bg-shape updown-anim position-absolute"
+            src="/img/shapes/round_bg_shape.webp"
+            alt=""
+          />
           <div className="container position-relative">
             <div className="row">
               <div className="col-md-12">
                 <div className="section-heading">
-                  <h3 className="section-title fs-30 fw-600">Featured Profiles</h3>
+                  <h3 className="section-title fs-30 fw-600">
+                    Featured Profiles
+                  </h3>
                 </div>
               </div>
             </div>
@@ -192,7 +208,10 @@ export default async function Home() {
               {/* Example Feature Item */}
               <div className="row gy-4">
                 {[
-                  { name: "Minakshi Sharma", img: "/img/feature/feature_img1.png" },
+                  {
+                    name: "Minakshi Sharma",
+                    img: "/img/feature/feature_img1.png",
+                  },
                   { name: "Amrita Roi", img: "/img/feature/feature_img2.png" },
                   { name: "Moonlika", img: "/img/feature/feature_img3.png" },
                   { name: "Shradha", img: "/img/feature/feature_img4.png" },
@@ -203,20 +222,32 @@ export default async function Home() {
                     <div className="feature-items h-100 slow-effect">
                       <div className="feature-image position-relative overflow-hidden d-block">
                         <a href="#">
-                          <img className="slow-effect" src={person.img} alt={person.name} />
+                          <img
+                            className="slow-effect"
+                            src={person.img}
+                            alt={person.name}
+                          />
                         </a>
                       </div>
                       <div className="feature-content">
                         <div className="feature-area d-flex flex-wrap justify-content-between position-relative mb-3 pb-3 slow-effect">
-                          <a href="#" className="feature-links fw-600">{person.name}</a>
-                          <p className="feature-location m-0 text-end">Tonk Road, Jaipur</p>
+                          <a href="#" className="feature-links fw-600">
+                            {person.name}
+                          </a>
+                          <p className="feature-location m-0 text-end">
+                            Tonk Road, Jaipur
+                          </p>
                         </div>
                         <div className="feature-btns d-flex flex-wrap justify-content-between">
                           <a className="common-btn btn primary-btn" href="#">
                             <i className="fa-solid fa-phone"></i> +91XXXXXXXXXX
                           </a>
-                          <a className="common-btn btn whatsapp-outer-btn" href="#">
-                            <i className="fa-brands fa-whatsapp"></i> +91XXXXXXXXXX
+                          <a
+                            className="common-btn btn whatsapp-outer-btn"
+                            href="#"
+                          >
+                            <i className="fa-brands fa-whatsapp"></i>{" "}
+                            +91XXXXXXXXXX
                           </a>
                         </div>
                       </div>
@@ -233,7 +264,12 @@ export default async function Home() {
         <section className="Post-add-banner">
           <div className="container">
             <div className="row m-0">
-              <Image src="/img/resources/post_banner.png" alt="Post Banner" width={1200} height={400} />
+              <Image
+                src="/img/resources/post_banner.png"
+                alt="Post Banner"
+                width={1200}
+                height={400}
+              />
             </div>
           </div>
         </section>
@@ -249,17 +285,40 @@ export default async function Home() {
             </div>
             <div className="row gy-3">
               {[
-                { icon: '/img/icons/verified_profile.svg', title: 'Verified Profiles', desc: 'We ensure all profiles are verified for your peace of mind.' },
-                { icon: '/img/icons/fast_contact.svg', title: 'Fast Contact', desc: 'Quick and easy ways to get in touch with our team.' },
-                { icon: '/img/icons/privacy.svg', title: 'Privacy', desc: 'Your information is safe and secure with us.' },
-                { icon: '/img/icons/support.svg', title: '24x7 Support', desc: 'Our support team is always available for you.' },
+                {
+                  icon: "/img/icons/verified_profile.svg",
+                  title: "Verified Profiles",
+                  desc: "We ensure all profiles are verified for your peace of mind.",
+                },
+                {
+                  icon: "/img/icons/fast_contact.svg",
+                  title: "Fast Contact",
+                  desc: "Quick and easy ways to get in touch with our team.",
+                },
+                {
+                  icon: "/img/icons/privacy.svg",
+                  title: "Privacy",
+                  desc: "Your information is safe and secure with us.",
+                },
+                {
+                  icon: "/img/icons/support.svg",
+                  title: "24x7 Support",
+                  desc: "Our support team is always available for you.",
+                },
               ].map((item, index) => (
                 <div className="col-sm-6 col-lg-3" key={index}>
                   <div className="choose-items text-center slow-effect">
                     <div className="choose-icon mb-3">
-                      <Image src={item.icon} alt={item.title} width={60} height={60} />
+                      <Image
+                        src={item.icon}
+                        alt={item.title}
+                        width={60}
+                        height={60}
+                      />
                     </div>
-                    <div className="choose-heading fs-20 mb-2 fw-600">{item.title}</div>
+                    <div className="choose-heading fs-20 mb-2 fw-600">
+                      {item.title}
+                    </div>
                     <p className="m-0">{item.desc}</p>
                   </div>
                 </div>
@@ -269,23 +328,36 @@ export default async function Home() {
         </section>
 
         <section className="esj-section position-relative section-padding pt-3 pt-lg-5">
-          <Image className="position-absolute bg-shape1" src="/img/shapes/bg_hape.png" alt="Background Shape" width={500} height={500} />
+          <Image
+            className="position-absolute bg-shape1"
+            src="/img/shapes/bg_hape.png"
+            alt="Background Shape"
+            width={500}
+            height={500}
+          />
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 mb-4 mb-lg-0">
                 <div className="esj-images updown-anim">
-                  <Image src="/img/resources/esj_img.png" alt="ESJ" width={500} height={500} />
+                  <Image
+                    src="/img/resources/esj_img.png"
+                    alt="ESJ"
+                    width={500}
+                    height={500}
+                  />
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="esj-content">
                   <div className="section-heading mb-3">
                     <h4 className="section-title fs-30 fw-600">
-                      What should I expect when using <span className="primary-color">ESJ?</span>
+                      What should I expect when using{" "}
+                      <span className="primary-color">ESJ?</span>
                     </h4>
                   </div>
                   <p className="fs-18">
-                    Expect a wide variety of services and features designed to make your experience seamless and enjoyable.
+                    Expect a wide variety of services and features designed to
+                    make your experience seamless and enjoyable.
                   </p>
                 </div>
               </div>
@@ -299,34 +371,43 @@ export default async function Home() {
               <div className="col-lg-7">
                 <div className="faqs-panel">
                   <div className="section-heading">
-                    <h4 className="section-title fs-30 fw-600">Frequently Asked Questions (FAQ)</h4>
+                    <h4 className="section-title fs-30 fw-600">
+                      Frequently Asked Questions (FAQ)
+                    </h4>
                   </div>
                   <div className="accordion" id="accordionExample">
                     {[
-                      'What services do you offer?',
-                      'How can I contact support?',
-                      'Is my information secure?',
-                      'How do I get started?',
-                      'Can I change my plan later?'
+                      "What services do you offer?",
+                      "How can I contact support?",
+                      "Is my information secure?",
+                      "How do I get started?",
+                      "Can I change my plan later?",
                     ].map((question, i) => (
                       <div className="accordion-item faq-single-items" key={i}>
                         <button
-                          className={`accordion-button faq-btn fw-600 fs-22 ${i === 0 ? '' : 'collapsed'}`}
+                          className={`accordion-button faq-btn fw-600 fs-22 ${
+                            i === 0 ? "" : "collapsed"
+                          }`}
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target={`#collapse${i}`}
-                          aria-expanded={i === 0 ? 'true' : 'false'}
+                          aria-expanded={i === 0 ? "true" : "false"}
                           aria-controls={`collapse${i}`}
                         >
                           {question}
                         </button>
                         <div
                           id={`collapse${i}`}
-                          className={`accordion-collapse collapse faqs-collapse ${i === 0 ? 'show' : ''}`}
+                          className={`accordion-collapse collapse faqs-collapse ${
+                            i === 0 ? "show" : ""
+                          }`}
                           data-bs-parent="#accordionExample"
                         >
                           <div className="accordion-body faq-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. Nulla vitae elit libero, a pharetra augue.
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -336,12 +417,22 @@ export default async function Home() {
               </div>
               <div className="col-lg-5">
                 <div className="faqs-image text-center text-lg-end">
-                  <Image src="/img/resources/faqs_imge.png" alt="FAQ Image" width={400} height={400} />
+                  <Image
+                    src="/img/resources/faqs_imge.png"
+                    alt="FAQ Image"
+                    width={400}
+                    height={400}
+                  />
                 </div>
               </div>
               <div className="col-md-12">
                 <div className="post-image">
-                  <Image src="/img/resources/post_adds2.png" alt="Post Banner" width={1200} height={400} />
+                  <Image
+                    src="/img/resources/post_adds2.png"
+                    alt="Post Banner"
+                    width={1200}
+                    height={400}
+                  />
                 </div>
               </div>
             </div>
@@ -349,5 +440,5 @@ export default async function Home() {
         </section>
       </div>
     </>
-  )
+  );
 }
